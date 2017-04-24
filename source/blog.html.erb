@@ -5,7 +5,8 @@ per_page: 10
 
 <div class="container">
   <div class="row">
-    <% if paginate && num_pages > 1 %>
+    <div class="col-md-8">
+      <% if paginate && num_pages > 1 %>
       <p>Page <%= page_number %> of <%= num_pages %></p>
 
       <% if prev_page %>
@@ -14,10 +15,13 @@ per_page: 10
     <% end %>
 
     <% page_articles.each_with_index do |article, i| %>
-      <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-      <!-- use article.summary(250) if you have Nokogiri available to show just
-           the first 250 characters -->
-      <%= article.body %>
+      <article>
+        <div class="article-date"><%= article.date.strftime('%b %e') %></div>
+        <h2><%= link_to article.title, article %></h2>
+        <!-- use article.summary(250) if you have Nokogiri available to show just
+             the first 250 characters -->
+        <%= article.body %>
+      </article>
     <% end %>
 
     <% if paginate %>
@@ -25,5 +29,6 @@ per_page: 10
         <p><%= link_to 'Next page', next_page %></p>
       <% end %>
     <% end %>
+    </div>
   </div>
 </div>

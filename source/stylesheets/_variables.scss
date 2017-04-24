@@ -10,9 +10,10 @@ $gray-light:             #bbb;
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
 $brand-primary:         #FFC107;
-$brand-secondary:       #00A499;
+$brand-secondary:       #FFD54F;
+$brand-light:           #FFF8E1;
 $brand-success:         #78BE20;
-$brand-info:            #0072ce;
+$brand-info:            #274195;
 $brand-warning:         #ED8B00;
 $brand-danger:          #ca0e00;
 $brand-grey:            #E8EDEE;
@@ -146,7 +147,7 @@ $btn-default-color:              $text-color;
 $btn-default-bg:                 #fff;
 $btn-default-border:             #eee;
 
-$btn-primary-color:              #fff;
+$btn-primary-color:              $gray;
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             transparent;
 
@@ -844,7 +845,7 @@ $blockquote-small-color:      $gray-light;
 //** Blockquote font size
 $blockquote-font-size:        ($font-size-base * 1.25);
 //** Blockquote border color
-$blockquote-border-color:     $gray-lighter;
+$blockquote-border-color:     $brand-secondary;
 //** Page header border color
 $page-header-border-color:    $gray-lighter;
 //** Width of horizontal description list titles

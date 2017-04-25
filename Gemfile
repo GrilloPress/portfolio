@@ -17,3 +17,4 @@ gem "turbolinks", :require => false
 gem 'bootstrap-sass', :require => false
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'

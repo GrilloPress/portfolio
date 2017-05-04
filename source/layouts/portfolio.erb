@@ -21,16 +21,16 @@
           
           <div class="col-md-4">
             <aside class="sidebar">
-              <h3>Recent blog posts</h3>
+              <h3>Recent portfolio items</h3>
               <ul class="list-unstyled">
-                <% page_articles('blog').each_with_index do |article, i| %>
+                <% page_articles('portfolio').each_with_index do |article, i| %>
                   <li><%= link_to article.title, article %></li>
                 <% end %>
               </ul>
               
-              <h3>Recent portfolio items</h3>
+              <h3>Recent blog posts</h3>
               <ul class="list-unstyled">
-                <% page_articles('portfolio').each_with_index do |article, i| %>
+                <% page_articles('blog').each_with_index do |article, i| %>
                   <li><%= link_to article.title, article %></li>
                 <% end %>
               </ul>

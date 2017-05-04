@@ -1,7 +1,7 @@
 ---
 title: Andrew Duckworth
 ---
-<div class="jumbotron">
+<section class="jumbotron">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -16,4 +16,52 @@ title: Andrew Duckworth
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+            <article>
+              <% link_to "./portfolio.html" do %>
+                <%= image_tag "me.jpg", class: "img-responsive" %>
+              <% end %>
+              <div class="block block-primary">
+                <%= link_to "Portfolio", "./portfolio.html" %>
+              </div>
+            </article>
+          </div>
+          
+          <div class="col-md-6">
+            
+          </div>
+          
+          <div class="col-md-12">
+            <article>
+              <% link_to "./blog/dislocation-and-miscommunication-in-jean-luc-godards-detective-1985.html" do %>
+                <%= image_tag "cover-art.jpg", class: "img-responsive" %>
+              <% end %>
+              <div class="block block-primary">
+                <%= link_to "Dislocation and (Mis)communication in Jean-Luc Godard’s Detective (1985)", "./blog/dislocation-and-miscommunication-in-jean-luc-godards-detective-1985.html" %>
+              </div>
+            </article>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <article>
+          <% link_to "./blog/pixellated-jackson-pollock.html" do %>
+            <%= image_tag "8bitjacksonpollock.png", class: "img-responsive" %>
+          <% end %>
+          <div class="block block-primary">
+            <%= link_to "Pixellated Jackson Pollock", "./blog/pixellated-jackson-pollock.html" %>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
